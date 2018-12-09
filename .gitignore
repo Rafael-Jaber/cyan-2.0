@@ -1,0 +1,9 @@
+.idea
+*.sqlite3
+venv
+*.pyc
+cyan/__pycache__/
+cyan.pem
+media
+static
+
