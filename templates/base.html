@@ -21,69 +21,70 @@
 	{% block styleInline %} {% endblock %}
 </head>
 	<header>
-		<nav class="fixed-top nav-menu">
-			<div class="row full-menu">
-				<div class="col-2">
-					<div class="row" style="line-height: 68px;">
-						<div class="col-6 icon-menu text-center" style="padding: 0">
-							<button type="button" onclick="moduleHide()" class="btn-menu">
-								<i class="fas fa-home"></i>
-							</button>
-						</div>
-						<div class="col-6 icon-menu text-left">
-							<button type="button" onclick="menuHide()" class="btn-menu">
-								<i class="fas fa-bars"></i>
-							</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-8">
-					<div class="row" style="height: 68px; align-items: center">
-						<input type="text" class="input-search" placeholder="Pesquisar">
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="row" style="line-height: 68px;">
-						<div class="col-6 icon-menu text-right">
-							<i class="fas fa-bell"></i>
-						</div>
-						<div class="col-6 icon-menu text-center">
-							<i class="fas fa-user"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row min-menu">
-				<div class="row">
-					<div class="col-6" style="line-height: 68px;">
-						<div class="row">
-							<div class="col-3 icon-menu text-center">
-								<button type="button" onclick="" class="btn-menu icon-menu" style="height: 68px">
+		<div class="header-bar fixed-top">
+				<div class="row full-menu">
+					<div class="col-2">
+						<div class="row" style="line-height: 68px;">
+							<div class="col-6 icon-menu text-center" style="padding: 0">
+								<button type="button" onclick="moduleHide()" class="btn-menu">
 									<i class="fas fa-home"></i>
 								</button>
 							</div>
-							<div class="col-3 icon-menu text-center">
-								<button type="button" onclick="menuHide()" class="btn-menu icon-menu" style="height: 68px">
+							<div class="col-6 icon-menu text-left">
+								<button type="button" onclick="menuHide()" class="btn-menu">
 									<i class="fas fa-bars"></i>
 								</button>
 							</div>
-							<div class="col-6"></div>
 						</div>
 					</div>
-					<div class="col-6">
+					<div class="col-8">
+						<div class="row" style="height: 68px; align-items: center">
+							<input type="text" class="input-search" placeholder="Pesquisar">
+						</div>
+					</div>
+					<div class="col-2">
 						<div class="row" style="line-height: 68px;">
-							<div class="col-6"></div>
-							<div class="col-3 icon-menu text-center">
+							<div class="col-6 icon-menu text-right">
 								<i class="fas fa-bell"></i>
 							</div>
-							<div class="col-3 icon-menu text-center">
+							<div class="col-6 icon-menu text-center">
 								<i class="fas fa-user"></i>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="row min-menu">
+					<div class="row">
+						<div class="col-6" style="line-height: 68px;">
+							<div class="row">
+								<div class="col-3 icon-menu text-center">
+									<button type="button" onclick="" class="btn-menu icon-menu" style="height: 68px">
+										<i class="fas fa-home"></i>
+									</button>
+								</div>
+								<div class="col-3 icon-menu text-center">
+									<button type="button" onclick="menuHide()" class="btn-menu icon-menu" style="height: 68px">
+										<i class="fas fa-bars"></i>
+									</button>
+								</div>
+								<div class="col-6"></div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="row" style="line-height: 68px;">
+								<div class="col-6"></div>
+								<div class="col-3 icon-menu text-center">
+									<i class="fas fa-bell"></i>
+								</div>
+								<div class="col-3 icon-menu text-center">
+									<i class="fas fa-user"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</nav>
+		<nav class="fixed-top nav-menu"></nav>
 	</header>
 <body>
 

@@ -3,25 +3,29 @@
 
 {% block sidebar-menu %}
 	<li class="active">
-		<a href="#">
-			<i class="fas fa-tachometer-alt"></i> Dashboard
-		</a>
-	</li>
-	<li class="">
-		<a href="#">
-			<i class="fas fa-plus"></i> Nova Solicitação
-		</a>
-	</li>
-	<li class="">
-		<a href="#">
-			<i class="fas fa-list-ul"></i> Meus Protocolos
-		</a>
-	</li>
-	<li class="">
-		<a href="#">
-			<i class="fas fa-bug"></i> Erros
-		</a>
-	</li>
+		{% for menu in menus %}
+			{% if menu.men_submenu.all %}
+				<a href="#{{ menu.men_nome }}"
+				   data-toggle="collapse"
+				   aria-expanded="false"
+				   class="dropdown-toggle"
+				>{{ menu.men_nome }}</a>
+				<ul class="collapse list-unstyled" id="{{ menu.men_nome }}">
+					{% for sub in menu.men_submenu.all %}
+						<li>
+							<a href="{{ sub.sub_url_name }}">
+								<i class="fas {{ sub.sub_icon_class }}"></i> {{ sub.sub_nome }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			{% else %}
+			<a href="{{ menu.men_url_name }}">
+				<i class="fas {{ menu.men_icon_class }}"></i> {{ menu.men_nome }}
+			</a>
+			{% endif %}
+		{% endfor %}
+
 
 	<!--<li>
 		<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>

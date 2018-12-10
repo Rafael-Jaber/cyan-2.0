@@ -8,7 +8,7 @@ class Menu(models.Model):
     men_module = models.ForeignKey(Modulo, on_delete=models.PROTECT)
     men_url_name = models.CharField(max_length=150)
     men_icon_class = models.CharField(max_length=150)
-    men_submenu = models.ForeignKey(SubMenu, on_delete=models.PROTECT, blank=True, null=True)
+    men_submenu = models.ManyToManyField(SubMenu, blank=True, null=True)
 
     def __str__(self):
         return self.men_nome

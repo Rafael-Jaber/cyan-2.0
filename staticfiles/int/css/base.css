@@ -8,6 +8,12 @@
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
     background: linear-gradient(to right, #0083B0, #00B4DB);
 }
+.header-bar {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    z-index: 99999!important;
+}
 .text-menu {
     color: #fff;
     font-size: 25px;
