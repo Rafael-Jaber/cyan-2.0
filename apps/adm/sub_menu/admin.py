@@ -1,3 +1,4 @@
 from django.contrib import admin
+from apps.adm.sub_menu.models import SubMenu
 
-# Register your models here.
+admin.site.register(SubMenu)

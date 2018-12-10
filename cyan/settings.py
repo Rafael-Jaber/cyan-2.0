@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'apps.adm.grupo_permissoes',
     'apps.adm.menu',
     'apps.adm.sub_menu',
+    'apps.adm.setores',
+    'apps.adm.modulos',
 ]
 
 MIDDLEWARE = [
