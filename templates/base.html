@@ -94,7 +94,7 @@
 	        {% block sidebar-menu %} {% endblock %}
         </ul>
     </nav>
-
+	<nav id="sidebar2" class="active-menu"></nav>
 	<!-- Barra Seleção de Modulos -->
 	<nav id="sidemod">
 		<ul class="list-unstyled components">
@@ -104,15 +104,13 @@
 
 	<!-- Conteudo da página -->
     <div id="content">
-	    <div class="container-fluid">
+	    <div class="container">
 		    {% block main %} {% endblock %}
 	    </div>
     </div>
 </div>
 
-
 	{% block static %} {% endblock %}
-
 	<!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -132,7 +130,7 @@
     <script
 		    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
     ></script>
-
+	{% block scripts %} {% endblock %}
 	<script src="{% static 'int/js/menu.js' %}"></script>
 </body>
 </html>
